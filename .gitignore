@@ -21,3 +21,13 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+/.idea/jnjl-react.iml
+/.idea/.gitignore
+/.idea/$CACHE_FILE$
+/.idea/codeStyles/codeStyleConfig.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/codeStyles/Project.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/sonarIssues.xml
+/.idea/vcs.xml
