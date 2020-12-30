@@ -1,0 +1,28 @@
+<div class="section-header">
+  <h2>Orateurs</h2>
+  <p>Nous aurons l'honneur d'avoir avec nous</p>
+</div>
+
+<div class="row">
+
+  <ng-container *ngFor="let speaker of speakers">
+    <div class="col-lg-4 col-md-6">
+      <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+        <img [src]="'assets/img/speakers/' + speaker.lastName +'.jpg'"
+             imgFallback="assets/img/speakers/default.png" alt="Speaker 3" class="img-fluid">
+        <div class="details">
+          <h3><a href="javascript:void(0)">
+            <ng-container *ngIf="speaker.title">{{speaker.title}} </ng-container>
+            {{speaker.firstName}} {{speaker.lastName}}
+          </a></h3>
+          <p>{{speaker.description}}</p>
+          <div class="social">
+            <ng-container *ngFor="let sn of speaker.socialNetwork">
+              <a [href]="sn?.url" target="_blank" style="margin: 3px"><i class="fa fa-{{sn.icon || sn.name}}"></i></a>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>
