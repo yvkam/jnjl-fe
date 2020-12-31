@@ -46,24 +46,6 @@ export class SpeakerComponent implements OnInit {
           url: 'https://www.facebook.com/NJLiege/',
           icon: 'youtube-square'
         }]
-    },
-    {
-      firstName: 'Pathy',
-      lastName: 'Ilunga',
-      socialNetwork: [
-        {
-          name: 'facebook',
-          url: 'https://www.facebook.com/NJLiege/'
-        },
-        {
-          name: 'instagram',
-          url: 'https://www.facebook.com/NJLiege/'
-        },
-        {
-          name: 'youtube',
-          url: 'https://www.facebook.com/NJLiege/',
-          icon: 'youtube-square'
-        }]
     }
   ];
 

@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Agenda, AgendaItem, ScheduleService} from './schedule.service';
+import {Observable} from 'rxjs';
 
 @Component({
   selector: 'app-schedule',
   templateUrl: './schedule.component.html',
-  styleUrls: ['./schedule.component.css']
 })
-export class ScheduleComponent implements OnInit {
+export class ScheduleComponent {
 
-  constructor() { }
+  agenda$: Observable<Agenda>;
 
-  ngOnInit(): void {
+  constructor(private scheduleService: ScheduleService) {
+    this.agenda$ = scheduleService.getAgenda();
   }
 
 }

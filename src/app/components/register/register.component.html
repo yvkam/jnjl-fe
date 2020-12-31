@@ -5,10 +5,189 @@
 
 <div class="row">
   <div class="col-md-8 mr-auto ml-auto">
+    <div class="container" id="ff-compose">
 
-    <div class="container" id="ff-compose"></div>
-    <script async defer
-            src="https://formfacade.com/include/100485103499555406844/form/1FAIpQLSeUCnaSt_Qn0hTp5iuMSspX8hQIPIR79KR9y1n21oZoEiLMiA/bootstrap.js?div=ff-compose"></script>
 
+      <form id="registerForm" class="ff-form">
+
+        <div class="ff-section" id="ff-sec-root" style="display:block;">
+
+          <div class="ff-secfields">
+
+            <div class="form-group ff-item ff-emailAddress">
+              <label for="email">Adresse e-mail <span class="ff-required">*</span></label>
+              <input type="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,63}$"
+                     class="form-control ff-email-widget" id="email" name="emailAddress" value=""
+                     required="">
+              <div id="ErroremailAddress" class="ff-widget-error"></div>
+            </div>
+
+
+            <div class="form-group ff-item  ff-text " id="ff-id-867121727">
+
+              <label for="phoneNumber">
+                Numéro de telephone
+                <span class="ff-required">*</span>
+              </label>
+
+
+              <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" value=""
+                     placeholder="" required="">
+
+
+              <div id="Error867121727" class="ff-widget-error"></div>
+            </div>
+
+            <div class="form-group ff-item  ff-text " id="ff-id-826355120">
+
+              <label for="firstName">
+                Prénom
+                <span class="ff-required">*</span>
+              </label>
+
+
+              <input type="text" class="form-control" id="firstName" name="firstName" value=""
+                     placeholder="" required="">
+
+
+              <div id="Error826355120" class="ff-widget-error"></div>
+            </div>
+
+            <div class="form-group ff-item  ff-text " id="ff-id-1149713456">
+
+              <label for="lastName">
+                Nom
+                <span class="ff-required">*</span>
+              </label>
+
+
+              <input type="text" class="form-control" id="lastName" name="lastName" value=""
+                     placeholder="" required="">
+
+
+              <div id="Error1149713456" class="ff-widget-error"></div>
+            </div>
+
+            <div class="form-group ff-item  ff-multiple_choice " id="ff-id-245385898">
+
+              <label for="sex">
+                Sexe
+                <span class="ff-required">*</span>
+              </label>
+
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="sexM" id="sexM"
+                       value="M" required="">
+                <label class="form-check-label" for="sexM">
+                  M
+                </label>
+              </div>
+
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="sexF" id="sexF"
+                       value="F" required="">
+                <label class="form-check-label" for="sexF">
+                  F
+                </label>
+              </div>
+
+
+              <div id="Error245385898" class="ff-widget-error"></div>
+            </div>
+
+            <div class="form-group ff-item  ff-date " id="ff-id-1212825914">
+
+              <label for="birth">
+                Date de naissance
+                <span class="ff-required">*</span>
+              </label>
+
+
+              <input type="date" class="form-control" id="birth" name="birth" required="" value=""
+                     placeholder="yyyy-mm-dd" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
+
+
+              <div id="Error1212825914" class="ff-widget-error"></div>
+            </div>
+
+            <div class="form-group ff-item  ff-text " id="ff-id-236217755">
+
+              <label for="church">
+                Eglise
+                <span class="ff-required">*</span>
+              </label>
+
+
+              <input type="text" class="form-control" id="church" name="church" value=""
+                     placeholder="" required="">
+
+
+              <div id="Error236217755" class="ff-widget-error"></div>
+            </div>
+
+            <div class="form-group ff-item  ff-multiple_choice " id="ff-id-476526749">
+
+              <label for="tips">
+                Souhaitez--vous soutenir la retraite?
+              </label>
+
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="entry.2109138769" id="2109138769.5€"
+                       value="5€">
+                <label class="form-check-label" for="2109138769.5€">
+                  5€
+                </label>
+              </div>
+
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="entry.2109138769" id="2109138769.10€"
+                       value="10€">
+                <label class="form-check-label" for="2109138769.10€">
+                  10€
+                </label>
+              </div>
+
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="entry.2109138769" id="2109138769.20€"
+                       value="20€">
+                <label class="form-check-label" for="2109138769.20€">
+                  20€
+                </label>
+              </div>
+
+
+              <div class="form-check form-check-other">
+                <input class="form-check-input" type="radio" value="__other_option__">
+                <input class="form-control" type="text" value=""
+                       placeholder="Other">
+              </div>
+
+
+              <div id="Error476526749" class="ff-widget-error"></div>
+            </div>
+
+          </div>
+          <div class="ff-button-bar">
+
+
+            <button type="button" class="btn btn-primary ff-submit" id="ff-submit-root">
+              <img src="https://formfacade.com/img/send.svg" class="ff-submit-icon">
+              Envoyer
+            </button>
+
+
+          </div>
+        </div>
+
+      </form>
+
+
+    </div>
   </div>
 </div>
+
